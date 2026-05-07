@@ -1,0 +1,8 @@
+*.txt
+*.pkl
+log
+RECALC*
+__pycache__
+*.pyc
+src/__pycache__
+

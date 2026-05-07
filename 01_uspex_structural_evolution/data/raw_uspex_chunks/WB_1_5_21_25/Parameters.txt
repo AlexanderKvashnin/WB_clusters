@@ -1,0 +1,84 @@
+PARAMETERS EVOLUTIONARY ALGORITHM
+******************************************
+******************************************
+*      TYPE OF RUN AND SYSTEM            *
+******************************************
+******************************************
+USPEX : calculationMethod (USPEX, VCNEB, META)
+001   : calculationType (dimension: 0-3; molecule: 0/1; varcomp: 0/1)
+1     : optType (optimise by: 1=enthalpy, 2=volume, 3=hardness, 4=struc_order, 5=aver_dist, 6=mag_moment)
+1     : AutoFrac
+
+% vacuumSize
+6  
+% endVacuumSize
+
+% numbers of specices (ions/molecules/blocks) of each type
+% numSpecies
+1 21
+5 25
+% EndNumSpecies
+%%%%%%%%%%%%%%%%%%%%
+% Here come the atomic numbers of the atoms involved
+% atomType
+W B 
+% EndAtomType
+%%%%%%%%%%%%%%%%%%%%
+
+1     : checkConnectivity
+******************************************
+*               POPULATION               *
+******************************************
+200     : populationSize (how many individuals per generation)
+400      : initialPopSize
+1000     : numGenerations (how many generations shall be calculated)
+1000     : stopCrit
+140      : keepBestHM
+
+******************************************
+*  SURVIVAL OF THE FITTEST AND SELECTION *
+******************************************
+0     : reoptOld
+0.8   : bestFrac
+
+******************************************
+******************************************
+*          VARIATION OPERATORS           *
+******************************************
+******************************************
+0.15  : fracGene (fraction of generation produced by heredity)
+0.15  : fracG1ene
+0.15  : fracRand (fraction of generation produced randomly from space groups)
+0.15  : fracAtomsMut (fraction of the generation produced by softmutation)
+0.10  : fracTrans
+0.00  : fracPerm  (fraction of the generation produced by permutations)
+0.15  : fracAddAtom
+0.15  : fracRemAtom
+
+*****************************************
+*   DETAILS OF AB INITIO CALCULATIONS   *
+*****************************************
+% supported:  1-vasp, 2-siesta, 3-gulp, 4-LAMMPS, 5-NeuralNetworks
+% 6-dmacrys, 7-cp2k, 8-QuantumEspresso, 9-ASE, 10-ATK, 11-CASTEP
+abinitioCode (which code from CommandExecutable shall be used for calculation? )
+1 
+ENDabinit
+
+%Resolution for KPOINTS - one number per step or just one number in total)
+% KresolStart
+0.2 
+%  Kresolend
+
+% commandExecutable
+mpirun -np 8 /home/elgatito/soft/vasp.5.4.4/bin/vasp_std > output
+% EndExecutable
+
+1     : whichCluster (0: no-job-script, 1: local submission, 2: remote submission)
+10    : numParallelCalcs
+
+0.008 : toleranceFing
+
+1      : antiSeedsActivation
+0.05   : antiSeedsMax
+0.005  : antiSeedsSigma
+

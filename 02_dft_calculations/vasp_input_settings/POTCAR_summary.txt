@@ -1,0 +1,44 @@
+POTCAR summary
+==============
+
+POTCAR order:
+W B N H
+
+Exchange-correlation family of PAW potentials:
+PAW_PBE
+
+Summary of PAW potentials
+-------------------------
+
+Element: W
+TITEL:   PAW_PBE W 08Apr2002
+VRHFIN:  W : 6s5d
+ZVAL:    6.000
+POMASS:  183.850
+ENMAX:   223.057 eV
+ENMIN:   167.293 eV
+RCORE:   2.750
+
+Element: B
+TITEL:   PAW_PBE B 06Sep2000
+ZVAL:    3.000
+POMASS:  10.811
+ENMAX:   318.614 eV
+ENMIN:   238.960 eV
+RCORE:   1.700
+
+Element: N
+TITEL:   PAW_PBE N 08Apr2002
+ZVAL:    5.000
+POMASS:  14.001
+ENMAX:   400.000 eV
+ENMIN:   300.000 eV
+RCORE:   1.500
+
+Element: H
+TITEL:   PAW_PBE H 15Jun2001
+ZVAL:    1.000
+POMASS:  1.000
+ENMAX:   250.000 eV
+ENMIN:   200.000 eV
+RCORE:   1.100

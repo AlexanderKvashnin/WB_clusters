@@ -28,15 +28,19 @@ table retains total energies and intramolecular geometric descriptors.
 
 ### `WB_nanoclusters_NH3_adsorption_W_B_sites.csv`
 
-Current consolidated molecular-NH3 adsorption table used for the W/B site
+Canonical consolidated molecular-NH3 adsorption table used for the W/B site
 comparison. It contains 286 configurations: 113 W-site configurations and 173
-accessible B-site configurations.
+accessible B-site configurations. The B-site geometric descriptors were
+calculated from the final optimized `CONTCAR` structures.
 
 - `cluster`: W-B nanocluster composition.
 - `site_label`: element-local adsorption-site label, for example `W1` or `B1`.
 - `anchor_element`: adsorption-site element, `W` or `B`.
+- `E_total_eV`: total energy of the optimized NH3-adsorbed system.
 - `E_ads_NH3_eV`: molecular-NH3 adsorption energy.
 - `d_NH3_host_A`: optimized distance between N and the host atom.
+- `d_N_H_mean_A`: mean of the three N-H bond lengths.
+- `angle_HNH_mean_deg`: mean of the three H-N-H angles.
 
 ### `WB_nanoclusters_H_adsorption.csv`
 

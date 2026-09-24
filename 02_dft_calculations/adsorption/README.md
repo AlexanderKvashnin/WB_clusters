@@ -13,19 +13,6 @@ Reference total energies for 21 optimized bare W-B nanoclusters.
 - `cluster`: W-B nanocluster composition.
 - `E_total_eV`: total energy of the optimized bare cluster.
 
-### `WB_nanoclusters_NH3_adsorption.csv`
-
-Detailed data for 113 optimized molecular-NH3 configurations on W sites. This
-table retains total energies and intramolecular geometric descriptors.
-
-- `cluster`: W-B nanocluster composition.
-- `site_id`: zero-based adsorption-configuration identifier within a cluster.
-- `E_total_eV`: total energy of the optimized NH3-adsorbed system.
-- `E_ads_NH3_eV`: molecular-NH3 adsorption energy.
-- `d_N_W_min_A`: minimum N-W distance.
-- `d_N_H_mean_A`: mean N-H bond length.
-- `angle_HNH_mean_deg`: mean H-N-H angle.
-
 ### `WB_nanoclusters_NH3_adsorption_W_B_sites.csv`
 
 Canonical consolidated molecular-NH3 adsorption table used for the W/B site

@@ -13,7 +13,7 @@ Reference total energies for 21 optimized bare W-B nanoclusters.
 - `cluster`: W-B nanocluster composition.
 - `E_total_eV`: total energy of the optimized bare cluster.
 
-### `WB_nanoclusters_NH3_adsorption_W_B_sites.csv`
+### `WB_nanoclusters_NH3_adsorption.csv`
 
 Canonical consolidated molecular-NH3 adsorption table used for the W/B site
 comparison. It contains 286 configurations: 113 W-site configurations and 173
